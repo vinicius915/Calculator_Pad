@@ -1,0 +1,92 @@
+
+/*========================== GOOGLE FONTS =================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:ital,wght@0,400;0,500;1,300;1,600&display=swap');
+
+
+
+/*========================== PADRÃO INTERNO =================================*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(8,0,36); 
+    background: linear-gradient(90deg, rgba(8,0,36,0.8995973389355743) 0%, rgba(42,35,93,1) 35%, rgba(15,76,125,1) 100%);
+}
+
+
+.container{
+    position: relative;
+    background: rgba(1, 1, 1, 0.8);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.8);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.container .calculadora{
+    position: relative;
+    display: grid;
+}
+
+.container .calculadora .value{
+
+    grid-column: span 4;
+    height: 140px;
+    width: 400px;
+    text-align: right;
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    color: #fff;
+    background: rgba(1, 1, 1, 0.8);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    
+
+}
+
+.container .calculadora span{
+    display: grid;
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    text-align: center;
+    padding-top: 35px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+
+.container .calculadora span:hover{
+    background: rgb(175, 181, 183);
+    transition: 1s;
+}
+
+.container .calculadora .btn_limpar{
+    grid-column: span 2;
+    width: 200px;
+}
+
+.container #operator{
+    background: rgba(16, 232, 164, 0.3);
+    
+}
+

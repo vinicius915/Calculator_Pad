@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="/img/" type="image/x-icon">
+
+        <!--=============== FONTAWESOME ===============-->
+         <script src="https://kit.fontawesome.com/2c07fe46a8.js" crossorigin="anonymous"></script>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/css/Style.css">
+
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src=""></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="jsct.js"></script>
+
+        <title>Calculadora</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <form action="" class="calculadora" name="calc">
+                <input type="text"  class="value" name="text">
+                <span class="btn_limpar" id="operator" onclick="document.calc.text.value = ' ' ">C</span>
+                <span class="btn_delete" id="operator" onclick="document.calc.text.value = calc.text.value.slice(0, -1) ">Del</span>
+                <span class="btn_division" id="operator" onclick="document.calc.text.value += '/' ">/</span>
+                <span class="num" onclick="document.calc.text.value += '9' ">9</span>
+                <span class="num" onclick="document.calc.text.value += '8' ">8</span>
+                <span class="num" onclick="document.calc.text.value += '7' ">7</span>
+                <span class="btn_mutl" id="operator" onclick="document.calc.text.value += '*' ">*</span>
+                <span class="num" onclick="document.calc.text.value += '6' ">6</span>
+                <span class="num" onclick="document.calc.text.value += '5' ">5</span>
+                <span class="num" onclick="document.calc.text.value += '4' ">4</span>
+                <span class="btn_plus" id="operator" onclick="document.calc.text.value += '+' ">+</span>
+                <span class="num" onclick="document.calc.text.value += '3' ">3</span>
+                <span class="num" onclick="document.calc.text.value += '2' ">2</span>
+                <span class="num" onclick="document.calc.text.value += '1' ">1</span>
+                <span class="btn_sub" id="operator" onclick="document.calc.text.value += '-' ">-</span>
+                <span class="num" onclick="document.calc.text.value += '0' ">0</span>
+                <span class="num" onclick="document.calc.text.value += '.' ">.</span>
+                <span class="num" onclick="document.calc.text.value =eval(calc.text.value)">=</span>
+    
+            </form>
+        </div>
+        
+    
+    
+</html>
